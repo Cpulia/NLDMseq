@@ -18,7 +18,7 @@ import Extract_GeneData
 #LDA 
 import lda
 
-DEBUG=True  
+DEBUG=False  
  
 if DEBUG == True: 
         import pdb 
