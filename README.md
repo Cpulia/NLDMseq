@@ -71,13 +71,13 @@ To test this software, the user can run the python script *test_NLDMseq.py* .Thi
 The following commands are used to align sequenced reads to a reference transcriptome.
 ```shell
 $ bowtie2-build -f ref_transcript. Fasta ref_transcript.index
-$ bowtie2 –t –f -k 20 -p 4--no-sq --no-head -x ref_transcript.index raw_data.fasta -S align_reads.sam
+$ bowtie2 –t –f -k 20 -p 4 --no-hd --no-unal -x ref_transcript.index raw_data.fasta -S align_reads.sam
 ```
 
 If the paired-end reads are processed, the Bowtie command should be listed as
 
 ```shell
-$ bowtie2 –t–f -k 20 -p 4 --no-sq --no-head --no-mixed --no-discordant -x ensGene.ref_transcript.index -1 raw_data.fasta -2 raw_data.fasta -S align_reads.sam
+$ bowtie2 –t –f -k 20 -p 4 --no-hd --no-unal --no-mixed --no-discordant -x ensGene.ref_transcript.index -1 raw_data.fasta -2 raw_data.fasta -S align_reads.sam
 ```
 
 The above transcriptome reference sequence can be downloaded from UCSC or Ensembl website.
