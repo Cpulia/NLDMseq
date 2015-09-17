@@ -122,13 +122,13 @@ Since the Bowtie2 output has been supplied, so you can skip step1 and just run t
 
 For single-end data:
 ```
-$ python NLDMseq-calulation.py –a ../ensGene.txt  -t 2 -i ../SE_read_example –o ../se_out -s 
+$ python NLDMseq-calulation.py –a ../example_data/annocation/annocation.gtf  -t 4 -i ../example_data/SE_example –o ../se_out -s 
 ```
 After running the above command, you will obtain two output files of this single-end data, ***expression_gene.txt*** and ***expression_isoform.txt*** under se_out path.
 
 For paired-end data :
 ```
-$ python NLDMseq-calulation.py –a ../ ensGene.txt –t 2 –i ../PE_read_example –o../pe_out
+$ python NLDMseq-calulation.py –a ../example_data/annocation.gtf –t 4 –i ../example_data/PE_example –o../pe_out
 ```
 After running the above command, you will obtain two output files of this paired-end data, ***expression_gene.txt*** and ***expression_isoform.txt*** under pe_out path.
 
