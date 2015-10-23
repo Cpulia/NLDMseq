@@ -18,7 +18,7 @@ else:
         so=ctypes.CDLL("./libgene_expre.so")
         so.gene_expre("./TEST_DATA","test_gene",100,"./workfloder/expression_log")
         if os.path.exists("./workfloder/expression_log"):
-                fp=open("./workfloder/expression_log")
+                fp=open("./workfloder/expression_log",'r')
                 expre_data=fp.readline()
                 gene_name=expre_data.split()
                 if not (gene_name[0]=="test_gene"):
