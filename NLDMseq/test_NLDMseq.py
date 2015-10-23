@@ -16,7 +16,7 @@ if not os.path.exists("./workfloder"):
         print "Create workfloder failed .Please get the access control"
 else:
         so=ctypes.CDLL("./libgene_expre.so")
-        so.gene_expre("./TEST_DATA","test_gene",100,"./workfloder")
+        so.gene_expre("./TEST_DATA","test_gene",100,"./workfloder/expression_log")
         if os.path.exists("./workfloder/expression_log"):
                 fp=open("./workfloder/expression_log")
                 expre_data=fp.readline()
